@@ -1,0 +1,73 @@
+{
+  "repo": "anchor-ui-canvas-trail",
+  "language": "Lua",
+  "category": "Frontend apps",
+  "goal": "Develop a Lua command-oriented project for canvas scenarios with windowed input fixtures, late-data behavior checks, and no credentials or hosted services.",
+  "review_model": {
+    "terms": [
+      "view drift",
+      "state pressure",
+      "layout risk",
+      "interaction cost"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "view drift",
+      "signal": 53,
+      "slack": 49,
+      "drag": 9,
+      "confidence": 55,
+      "score": 183,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "state pressure",
+      "signal": 65,
+      "slack": 50,
+      "drag": 29,
+      "confidence": 60,
+      "score": 153,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "layout risk",
+      "signal": 69,
+      "slack": 21,
+      "drag": 11,
+      "confidence": 48,
+      "score": 174,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "interaction cost",
+      "signal": 67,
+      "slack": 24,
+      "drag": 17,
+      "confidence": 70,
+      "score": 177,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "view drift",
+      "signal": 74,
+      "slack": 33,
+      "drag": 24,
+      "confidence": 63,
+      "score": 172,
+      "lane": "ship"
+    }
+  ]
+}
