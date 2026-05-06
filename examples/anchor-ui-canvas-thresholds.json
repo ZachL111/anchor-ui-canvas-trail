@@ -1,0 +1,17 @@
+{
+  "repo": "anchor-ui-canvas-trail",
+  "thresholds": {
+    "signal": 2,
+    "slack": 2,
+    "confidence": 1,
+    "drag": 5,
+    "ship": 176,
+    "watch": 103
+  },
+  "terms": [
+    "view drift",
+    "state pressure",
+    "layout risk",
+    "interaction cost"
+  ]
+}
